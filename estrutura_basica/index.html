@@ -1,0 +1,212 @@
+<!DOCTYPE html><!--informa ao navegador que o arquivo é html-->
+<html lang="pt-br"><!--informa ao navegador o idioma da página-->
+
+<html>
+
+    <head>
+        <meta charset="UTF-8"><!--define os tipos dos caracteres usados, evita problemas com acentuação-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--para que funcione no antigo internet explorer-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--define para usar o tamanho da tela do dispositivo do usuário-->
+        <meta name="description" content="Esse é meu primeiro site"><!--pequena descrição sobre o site, usado ao compartilhar links por exemplo-->
+        <meta name="keywords" content="aprendizado, web, html, curso"><!--palavras chaves usadas para sites de busca, facilita encontrar seu site-->
+        <meta name="author" content="Wesley Chapado"><!--define o autor do site-->
+        <title>Exemplo de título</title><!--nome que aparece na aba do navegador-->
+    </head>
+
+    <body>
+        <!--cabeçalho-->
+        <h1>Exemplo de cabeçalho H1</h1><!--define a importância do texto no site, não use como texto simples, não use mais de um H1 na mesma página-->
+        <h2>Exemplo de cabeçalho H2</h2>
+        <h3>Exemplo de cabeçalho H3</h3>
+        <h4>Exemplo de cabeçalho H4</h4>
+        <h5>Exemplo de cabeçalho H5</h5>
+        <h6>Exemplo de cabeçalho H6</h6>
+
+        <hr><!--adiciona uma linha como divisória-->
+
+        <!--parágrafos-->
+        <p>Exemplo de parágrafo usando a tag p</p><!--cria um parágrafo para inserção de textos-->
+        <p>Exemplo de parágrafo <b>com negrito</b> no texto usando a tag b</p><!--a tag b indica para usar negrito-->
+        <p>Exemplo de parágrafo <strong>com negrito</strong> no texto usando a tag strong</p><!--a tag strong indica para dar ênfase no texto marcado, também deixa em negrito-->
+        <p>Exemplo de parágrafo <br>com quebra de linha usando a tag br</p><!--a tag br adiciona uma quebra de linha-->
+        <p>Exemplo de parágrafo <i>com itálico usando a tag</i> i</p><!--a tag i adiciona itálico-->
+        <p>Exemplo de parágrafo <u>com sublinhado usando a tag</u> u</p><!--a tag u adiciona sublinhado-->
+        <p>Exemplo de parágrafo <small>com letra pequena usando a tag</small> small</p><!--a tag small deixa a letra pequena-->
+        <p>Exemplo de parágrafo <del>com letra riscada usando a tag</del> dell</p><!--a tag del deixa a letra riscada-->
+        <p>Exemplo de exponencial 2<sup>10</sup> usando a tag sup</p><!--a tag sup "exponencia" o texto-->
+        <p>Exemplo de exponencial invertido 2<sub>10</sub> usando a tag sub</p><!--a tag sub "exponencia invertidamente" o texto-->
+        <p>Exemplo de parágrafo <mark>com letra destacada usando a tag</mark> mark</p><!--a tag mark deixa a letra riscada-->
+        <p>Exemplo de parágrafo com abreviatura <abbr title="League of legends">LOL</abbr> usando a tag abbr</p><!--a tag abbr adiciona um balão explicativo para o texto-->
+
+        <!--tags comuns-->
+        <address>Exemplo de endereço, 122, Centro Elisiário-SP, usando a tag address</address><!--a tag address define o texto como endereço, pode ser usado para telefone ou email também-->
+        <cite>Exemplo de citação usando a tag cite</cite><!--a tag cite define o texto como uma citação usado para obras, livros ou filmes-->
+        <br>
+        <cite>Exemplo de citação com fala <q>Fala dita no filme/livro citado</q>usando a tag q</cite><!--a tag q define o texto como uma fala de uma citação-->
+        <br>
+        <blockquote>Exemplo de texto destacado usando a tag blockquote</blockquote><!--a tag blockquote destaca o texto, colocando-o mais ao centro e adicionando espaços acima e abaixo-->
+        <br>
+        <bdo dir="rtl">Exemplo de texto invertido usando a tag bdo</bdo><!--a tag bdo inverte a ordem do texto rtl=direita para esquerda, ltr=esquerda para direita-->
+        <br>
+
+        <!--links-->
+        <a href="https://google.com">Exemplo de link com URL ABSOLUTA para o google usando a tag a</a><!--a tag a define um link e o parâmetro href define o link alvo-->
+        <br>
+        <a href="https://google.com" target="_blank">Exemplo de link link com URL ABSOLUTA para o google usando a tag a redirecionando para uma nova aba</a><!--o parâmetro target define em qual aba o link será aberto(DICA: da pra selecionar o iframe usando como referencia o name dele), neste caso em uma nova aba-->
+        <br>
+        <a href="exemplo_caminho_relativo/sobre_mim.html">Exemplo de link com CAMINHO RELATIVO para o arquivo sobre_mim.html</a><!--a tag a define um link e o parâmetro href define o link alvo-->
+        <br>
+
+        <!--imagens-->
+        <p>Exemplo de imagem usando a tag img:</p>
+        <!--a tag img insere uma imagem, o parâmetro src é o caminho da imagem(absoluto ou relativo), nao existe fechamento para a tag img-->
+        <!--width=largura da imagem, se height não for informado a altura é ajustada automaticamente-->
+        <!--height=largura não proporcional da imagem em pixels, isso pode destorcer a imagem-->
+        <!--alt=descrição da imagem, usados para acessibilidade -->
+        <!--DICA: use sempre a imagem com tamanho necessário para evitar lentidão ao carregar imagens, compress, easy resize, flaticon-->
+        <!--DICA: para imagens com fundos transparente use o formato .png-->
+        <img src="exemplo_imagem/gatinho_lindo.jpg" width="350" height="250" alt="gatinho branco e marrom de olhos azuis e fundo branco">
+        <br>
+
+        <!--tabelas-->
+        <!--table=indica uma tabela-->
+        <!--tr=indica uma linha-->
+        <!--th=indica um título para a coluna-->
+        <!--td=indica uma informação na tabela-->
+        <!--width=indica a largura da tabela-->
+        <!--border=indica a largura da borda tabela-->
+        <p>Exemplo de tabela usando a tag table:</p>
+        <table width="50%" border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Peso</th>
+            </tr>
+            <tr>
+                <td>Wesley</td>
+                <td>29</td>
+                <td>110kg</td>
+            </tr>
+            <tr>
+                <td>Aline</td>
+                <td>29</td>
+                <td>70kg</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--listas-->
+        <!--ul=indica uma lista não ordenada-->
+        <!--li=indica um item na lista-->
+        <p>Exemplo de lista não ordenada usando a tag ul:</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <br>
+
+        <!--ol=indica uma lista ordenada-->
+        <!--li=indica um item na lista-->
+        <p>Exemplo de lista ordenada usando a tag ol:</p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <br>
+
+        <!--iframe-->
+        <!--cria html dentro da página html-->
+        <p>Exemplo de iframe usando a tag iframe:</p>
+        <iframe width="560" height="315" src="exemplo_caminho_relativo/sobre_mim.html" title="YouTube video player"></iframe>
+        <br>
+
+        <p>Exemplo de iframe usando um vídeo do you tube com a tag iframe:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/448sdzWsnMs?si=LSKLzI_lmRV_tCY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+
+        <!--formulário-->
+        <!--form= indica um formulário-->
+        <!--label= nome do campo que o usuário vai ver-->
+        <!--for= define a qual input o label se refere-->
+        <!--input= indica uma entrada no formulário-->
+        <!--id= cria um identificador para o campo-->
+        <!--type= indica o tipo da  entrada no formulário-->
+        <!--"text"= indica que a entrada é do tipo texto-->
+        <!--"password"= indica que a entrada é do tipo password(senha)-->
+        <!--"email"= indica que a entrada é do tipo email-->
+        <!--"submit"= indica que é um botão de envio-->
+        <!--"radio"= indica que é um selecione(bolinha que só da pra selecionar um)-->
+        <!--"checkbox"= indica que é um checkbox(quadradinho que da pra selecionar mais de um)-->
+        <!--placeholder= legenda para o usuário entender o que digitar-->
+        <!--required= define que o campo seja preenchido obrigatoriamente-->
+        <!--select= define que o é do tipo select(seleciona algum da lista)-->
+        <!--option= define as opções disponíveis no select-->
+        <!--textarea= indica que é um campo de texto-->
+        <!--button= cria um botão genérico, alternativa ao botão submit-->
+        <p>Exemplo de formulário usando a tag form:</p>
+        <form>
+            <label for="campo_nome">Nome:</label>
+            <input id="campo_nome" type="text" placeholder="Digite seu nome" required>
+            <br>
+
+            <label for="campo_senha">Senha:</label required>
+            <input id="campo_senha" type="password" placeholder="Digite sua senha">
+            <br>
+
+            <label for="campo_email">Email:</label>
+            <input id="campo_email" type="email" placeholder="Digite seu email" required>
+            <br>
+
+            <h2>Selecione seu animal:</h2>
+
+            <input type="radio" id="radio_cachorro" name="radio_animal" value="Cachorro">
+            <label for="radio_cachorro">Cachorro</label>
+            <br>
+
+            <input type="radio" id="radio_gato" name="radio_animal" value="Gato">
+            <label for="radio_gato">Gato</label>
+            <br>
+
+            <input type="radio" id="radio_papagaio" name="radio_animal" value="Papagaio">
+            <label for="radio_papagaio">Papagaio</label>
+            <br>
+
+            <h2>O que você tem em casa:</h2>
+
+            <input type="checkbox" id="checkbox_tv" name="checkbox_tv" value="TV">
+            <label for="radio_papagaio">TV</label>
+            <br>
+
+            <input type="checkbox" id="checkbox_geladeira" name="checkbox_geladeira" value="Geladeira">
+            <label for="checkbox_geladeira">Geladeira</label>
+            <br>
+
+            <input type="checkbox" id="checkbox_micro_ondas" name="checkbox_micro_ondas" value="Micro-ondas">
+            <label for="checkbox_micro_ondas">Micro-ondas</label>
+            <br>
+
+            <h2>Escolha uma cor:</h2>
+
+            <select>
+                <option value="" selected disabled>Selecione uma cor</option><!--selected atribui o valor inicial, disabled desabilita o campo quando o usuário clica no select-->
+                <option value="Vermelho">Vermelho</option>
+                <option value="Verde">Verde</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Azul">Azul</option>
+            </select>
+            <br>
+
+            <h2>Digite sua mensagem:</h2>
+            <textarea placeholder="Digite sua mensagem" name="mensagem" rows="5" cols="50" required></textarea><!--rows=número de linha, cols=número de colunas-->
+            <br><br>
+
+            <button>Exemplo de botão</button>
+            <input type="submit" value="Enviar formulário">
+        </form>
+        <br>
+
+    </body>
+
+</html>
