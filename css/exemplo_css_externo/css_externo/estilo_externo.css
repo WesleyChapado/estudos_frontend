@@ -1,0 +1,11 @@
+/*
+body= estiliza todas as tags body
+h1= estiliza todas as tags h1
+*/
+
+body{
+    background: violet;
+}
+h1{
+    color: blue; font-size: 50px;
+}

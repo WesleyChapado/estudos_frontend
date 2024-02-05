@@ -1,0 +1,16 @@
+/*cria uma classe para estilização personalizada ex: ".nome_da_classe"*/
+.cor_vermelha{
+    color: red;
+    /*outras estilizações aqui*/
+}
+
+.fonte_50{
+    font-size: 50px;
+    /*outras estilizações aqui*/
+}
+
+/*cria uma classe para estilização personalizada usando um id ex: "#id_da_classe"*/
+#cor_azul{
+    color: blue;
+    /*outras estilizações aqui*/
+}
