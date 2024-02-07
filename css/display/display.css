@@ -1,0 +1,27 @@
+/* algumas tags usam todo o espaço do bloco por padrão
+ex: div, h1-h6, p 
+vamos usar a propriedade display para ajustar o uso do espaço na página */
+
+/* com display=off nada será exibido, não mantém o espaço*/
+
+/* propriedades width/height etc.. não se aplicam em displays do tipo inline 
+para contornar isso use o display inline-block*/
+.propriedade_display_inline{
+    display: inline;
+    border: 3px solid red;
+    /* esconde o componente porem mantém o espaço dele */
+    /* visibility: hidden; */
+}
+
+/* propriedades width/height etc.. se aplicam normalmente em displays do tipo block */
+.propriedade_display_block{
+    display: block;
+    border: 3px solid red;
+}
+
+.propriedade_display_inline_block{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    border: 3px solid red;
+}

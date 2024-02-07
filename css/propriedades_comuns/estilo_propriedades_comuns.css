@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+/*podemos agrupar as propriedades do mesmo tipo na mesma linha separando apenas por espaço*/
+
+.propriedade_color_name{
+    color: blueviolet; /*color= define uma cor*/
+}
+
+.propriedade_color_hex{
+    color: #2BD59E; /*color= podemos usar o hex da cor também*/
+}
+
+.propriedade_background{
+    height: 100px; /*height= define a altura da propriedade*/
+    background: pink; /*background= define a cor de fundo*/;
+}
+
+.propriedade_background_image{
+    /*define a altura da propriedade*/
+    height: 200px;
+    /*define que vai ser usado uma imagem, url= caminho da imagem*/
+    background-image: url("exemplo_imagem/gatinho_lindo.jpg");
+    /*ajusta o tamanho, contain= ajusta a altura porém replica a imagem, cover=ajusta a largura por completo na página*/
+    background-size: contain;
+    /*defini o tamanho com porcentagem*/
+    background-size: 75%;
+    /*ajusta a repetição, no-repeat= não repete a imagem, repeat= repete a imagem, repeat-x/repeat-y= direção da repetição*/
+    background-repeat: no-repeat;
+    /*ajusta a posição, center/top/left/right*/
+    background-position: center;
+}
+
+.propriedade_border{
+     /*largura da borda*/
+    border: 5px;
+    /*adiciona uma borda, solid=cor sólida, dotted=pontinhos, dashed=tracinhos, double=dupla, groove=3d, inset=dentro, outset=fora, none/hidden=oculta*/
+    border: solid;
+    /*cor da borda completa*/
+    border-color: blue;
+    /*controla cada lado da borda de forma individual top/bottom/left/right/*/
+    border-top: 5px solid purple;
+    /* borda arredondada, porcentagem ou valor em pixels */
+    border-radius: 10px;
+}
+
+.propriedade_margin{
+    background: blueviolet;
+    border: 5px solid black;
+    /* margem tamanho em pixels/porcentagem top/bottom/left/right */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* adiciona a margem a todos os lados ao mesmo tempo na ordem= cima>direita>baixo>esquerda */
+    /* margin: 20px 400px 20px 400px; */
+}
+
+.propriedade_padding{
+    background: blueviolet;
+    border: 5px solid black;
+    /* padding tamanho em pixels/porcentagem top/bottom/left/right */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    /* adiciona a margem a todos os lados ao mesmo tempo na ordem= cima>direita>baixo>esquerda */
+    padding: 20px 400px 20px 400px;
+    /* adiciona a margem a todos os lados igualmente */
+    /* padding: 50px; */
+}
+
+.propriedade_hover{
+    background: pink;
+    border: 5px solid black;
+    /* padding tamanho em pixels/porcentagem top/bottom/left/right */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    /* adiciona a margem a todos os lados ao mesmo tempo na ordem= cima>direita>baixo>esquerda */
+    padding: 20px 400px 20px 400px;
+    /* adiciona a margem a todos os lados igualmente */
+    /* padding: 50px; */
+    border-radius: 10px;
+}
+
+/* hover é ativado quando o usuário passa com o mouse em cima do elemento */
+.propriedade_hover:hover{
+    background: green;
+}
+
+.propriedade_width_height{
+    width: 500px;
+    height: 100px;
+    background: grey;
+    /* define a largura maxima(funciona para height) */
+    max-width: 600px;
+    /* define a largura mínima(funciona para height) */
+    min-width: 200px;
+}
+
+.propriedade_text{
+    /* alinha o texto(left, right, center, bottom, justify) */
+    text-align: center;
+    /* remove todas as decorações do texto, como sublinhados em links por exemplo */
+    text-decoration: none;
+    /* adiciona o underline no texto */
+    text-decoration: underline;
+    /* adiciona um risco no meio do texto */
+    text-decoration: line-through;
+    /* transforma todo o texto em maiúscula */
+    text-transform: uppercase;
+    /* transforma todo o texto em minúscula */
+    text-transform: lowercase;
+    /* transforma as primeiras letras de cada palavra em maiúscula */
+    text-transform: capitalize;
+    /* ajusta o espaço de margem de cada parágrafo */
+    text-indent: 50px;
+    /* determina o espaçamento entre as letras */
+    letter-spacing: 5px;
+    /* determina a altura da linha */
+    line-height: 1;
+    /* determina o espaçamento entre palavras */
+    word-spacing: 15px;
+}
+
+.propriedade_font_family{
+    /* determina a fonte usada localmente */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* determina o tamanho da fonte em pixels */
+    font-size: 20px;
+    /* determina uma fonte externa
+        -   busque no google fontes
+        -   copie o import no google fontes em Remove>@import
+        -   adicione o import no início do arquivo
+        -   use a fonte de acordo indicado no google fontes Remove>@import>CSS rules to specify families
+    */
+    font-family: 'Protest Revolution', sans-serif;
+    /* determina o estilo da font */
+    font-style: italic;
+    /* determina a espessura da fonte(bold=negrito) */
+    font-weight: 200;
+}
+
+.propriedade_bottom_classico{
+    background: darkgreen;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 4px solid blue;
+    border-radius: 5px;
+}
+.propriedade_bottom_classico:hover{
+    background: greenyellow;
+    border: 6px solid red;
+}
+
+.propriedade_bottom_personalizado_1{
+    text-decoration: none;
+    padding: 10px;
+    border: 5px double blue;
+    color: blue;
+}
+
+.propriedade_bottom_personalizado_1:hover{
+    text-decoration: underline;
+    padding: 8px;
+    background: blue;
+    color: white;
+}
+
+.propriedade_bottom_personalizado_2{
+    color: black;
+    text-decoration: none;
+}
+
+.propriedade_bottom_personalizado_2:hover{
+    border-bottom: 5px solid red;
+}
+
+.propriedade_bottom_personalizado_3{
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+
+.propriedade_bottom_personalizado_3:hover{
+    font-size: 22px;
+    font-weight: bold;
+    /* determina o tipo de cursor que deve ser usado ao passar o mouse sobre o botão */
+    cursor: pointer;
+}
