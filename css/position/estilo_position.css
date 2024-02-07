@@ -1,0 +1,67 @@
+/* static= position padrão */
+/* relative= alteração de posição em relação a posição original */
+/* absolute= alteração de posição em relação a posição do elemento pai,
+o elemento pai deve possuir uma position definida diferente de static(padrão),
+caso a posição do elemento pai nao seja definia a posição de referencia será a proxima na hierarquia
+    stick= gruda em uma posição do elemento pai usado em rolagem
+*/
+
+/* neste exemplo esta classe será usada como elemento pai */
+.container{
+    position: relative;
+    background: blue;
+    display: inline-block;
+    width: 100%;
+    height: 1500px;
+}
+
+.div_1{
+    position: relative;
+    /* adiciona 20px a esquerda */
+    left: 20px;
+    /* adiciona 20px ao topo */
+    top: 20px;
+
+    /* define qual camada fica na frente/atrás atribuindo um valor de indexação(a maior fica na frente) */
+    z-index: 2;
+
+    width: 30%;
+    height: 100px;
+    background: yellow;
+    display: inline-block;
+}
+
+.div_2{
+    margin-left: 10%;
+    width: 30%;
+    height: 100px;
+    background: pink;
+    display: inline-block;
+    position: sticky;
+    /* define em qual borda ela vai grudar durante a rolagem */
+    top: 0;
+}
+
+.div_3{
+    width: 30%;
+    height: 100px;
+    background: red;
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    right: 50%;
+}
+
+.position_fixa{
+    background: green;
+    color: white;
+    width: 200px;
+    height: 150px;
+
+    /* posicionamento fixo */
+    position: fixed;
+    /* baixo */
+    bottom: 10px;
+    /* direita */
+    right: 10px
+}
