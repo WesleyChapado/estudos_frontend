@@ -1,0 +1,18 @@
+.container{
+    width: 25%;
+    height: auto;
+    border: 2px black solid;
+}
+
+.estilo_reduzido{
+    /* faz com que fique tudo em uma linha só */
+    white-space: nowrap;
+    /* esconde o texto que sai fora da caixa */
+    overflow: hidden;
+    /* adiciona tres pontinhos no fim do texto */
+    text-overflow: ellipsis;
+}
+
+.container:hover .estilo_reduzido{
+    white-space: normal;
+}

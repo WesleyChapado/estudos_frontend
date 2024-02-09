@@ -1,0 +1,11 @@
+.sombra_no_texto{
+    /* parâmetros = posição X, posição Y, blur, cor */
+    text-shadow: 2px 2px 5px red;
+}
+
+.sombra_na_caixa{
+    width: 50%;
+    height: 200px;
+    background: gray;
+    box-shadow: 5px 5px 15px red;
+}

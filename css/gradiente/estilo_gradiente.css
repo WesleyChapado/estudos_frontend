@@ -1,0 +1,31 @@
+.gradiente_padrao{
+    width: 100%;
+    height: 300px;
+    /* faz a transição de cima para baixo na ordem informada(quantidade de cores não importa) */
+    background-image: linear-gradient(blue, red, green);
+}
+
+.gradiente_esquerda_para_direita{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right, blue, red, green);
+}
+
+.gradiente_diagonal{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to top right, blue, red, green);
+}
+
+.gradiente_angular{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(45deg, blue, red, green);
+}
+
+.gradiente_circular{
+    width: 100%;
+    height: 300px;
+    /* ajuste a intensidade ex:(red 50%, green 30%) */
+    background-image: radial-gradient(red, green);
+}
