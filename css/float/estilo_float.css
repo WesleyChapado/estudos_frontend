@@ -1,0 +1,44 @@
+/* 
+tipos de float:
+left= coloca o elemento a esquerda, fora do container de exemplo, o texto extra contorna a imagem de exemplo.
+right= coloca o elemento a esquerda, fora do container de exemplo, o texto extra contorna a imagem de exemplo.
+*/
+
+/* neste exemplo vou alterar a tag a do botão de login */
+ul{
+    background: black;
+    padding: 20px;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+li a:hover{
+    background: gray;
+}
+
+.login{
+    float: right;
+}
+
+.login a:hover{
+    background: orange;
+}
+
+/* neste exemplo vou alterar a tag img */
+.container{
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.container img{
+    margin-right: 20px;
+    float: left;
+}

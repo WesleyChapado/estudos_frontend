@@ -1,0 +1,41 @@
+.overflow_off{
+    background: gray;
+    color: black;
+    height: 50px;
+}
+
+/* 
+A altura(height) deve ser especificada para que funcione.
+visible= (padrão) o conteúdo extra é exibido fora do elemento.
+hidden= esconde o conteúdo extra.
+scroll= cria uma rolagem.
+auto= cria o scroll apenas se for necessário, automaticamente.
+*/
+
+.overflow_hidden{
+    background: gray;
+    color: black;
+    height: 50px;
+    overflow: hidden;
+}
+
+.overflow_scroll{
+    background: gray;
+    color: black;
+    height: 60px;
+    overflow: scroll;
+}
+
+.overflow_auto{
+    background: gray;
+    color: black;
+    height: 60px;
+    overflow: auto;
+}
+
+body{
+    /* remove a barra de rolagem de toda a página no eixo Y */
+    overflow-y: hidden;
+    /* remove a barra de rolagem de toda a página no eixo X */
+    overflow-x: hidden;
+}

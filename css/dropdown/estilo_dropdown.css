@@ -1,0 +1,54 @@
+ul{
+    background: black;
+    /* remove os estilos da lista */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a, .botao_dropdown {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* a classe .botao_dropdown será alterada quando as condições(a:hover, .lista_dropdown:hover) forem acionadas */
+li a:hover, .lista_dropdown:hover .botao_dropdown{
+    background-color: red;
+}
+
+li.lista_dropdown{
+    display: inline-block;
+}
+
+.itens_dropdown{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 150px;
+
+}
+
+.itens_dropdown a{
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    border: 1px solid gray;
+}
+
+.itens_dropdown a:hover{
+    color: white;
+}
+
+/* a classe .itens_dropdown será alterada quando a condição(.lista_dropdown:hover) for acionada*/
+.lista_dropdown:hover .itens_dropdown{
+    display: block;
+}

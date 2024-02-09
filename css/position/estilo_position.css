@@ -15,7 +15,7 @@ caso a posição do elemento pai nao seja definia a posição de referencia ser�
     height: 1500px;
 }
 
-.div_1{
+.position_relative{
     position: relative;
     /* adiciona 20px a esquerda */
     left: 20px;
@@ -31,7 +31,7 @@ caso a posição do elemento pai nao seja definia a posição de referencia ser�
     display: inline-block;
 }
 
-.div_2{
+.position_sticky{
     margin-left: 10%;
     width: 30%;
     height: 100px;
@@ -42,7 +42,7 @@ caso a posição do elemento pai nao seja definia a posição de referencia ser�
     top: 0;
 }
 
-.div_3{
+.position_absolute{
     width: 30%;
     height: 100px;
     background: red;
@@ -52,7 +52,7 @@ caso a posição do elemento pai nao seja definia a posição de referencia ser�
     right: 50%;
 }
 
-.position_fixa{
+.position_fixed{
     background: green;
     color: white;
     width: 200px;
