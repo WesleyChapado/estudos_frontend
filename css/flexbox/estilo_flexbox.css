@@ -1,0 +1,42 @@
+/* 
+display: flex;, adiciona mais funcionalidades ao display
+*/
+
+/* facilita o redimensionamento dos elementos */
+*{
+    box-sizing: border-box;
+}
+
+.container_pai{
+    background: blue;
+    height: 600px;
+    display: flex;
+    /* define a direção do elemento como coluna */
+    flex-direction: row;
+    /* define a direção do elemento como linha */
+    /* flex-direction: row; */
+    /* move os elementos excedentes para a linha de baixo(por padrão é criado uma barra de rolagem)  */
+    flex-wrap: wrap;
+    /* define direction e wrap na mesma propriedade */
+    flex-flow: row wrap;
+    /* define a posição horizontal dos elementos(neste caso para o fim) em relação ao elemento pai */
+    justify-content: center;
+    /* define a posição vertical dos elementos(neste caso para o centro) em relação ao elemento pai */
+    /* align-items: center; */
+    /* move o bloco de conteúdo como um todo */
+    align-content: center;
+}
+
+.container_pai div{
+    /* define um tamanho padrão para todas os elementos filhos */
+    flex-grow: 1;
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.width_personalizada{
+    flex: 80%;
+}
