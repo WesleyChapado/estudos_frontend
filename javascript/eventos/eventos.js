@@ -93,3 +93,7 @@ function eventoOnload(){
 function eventoOnresize(){
     console.log('Evento onresize acionado')
 }
+
+//adiciona um listener(chama a função quando o evento for acionado)
+var elemento = document.getElementById("id_element")
+elemento.addEventListener('click', eventoOnclick)

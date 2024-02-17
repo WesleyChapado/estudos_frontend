@@ -11,6 +11,16 @@ total = numero1 / numero2;
 total = numero1 * numero2;
 total = ++numero1; //incrementa 1, obs: o valor atribuído em numero1 também será alterado
 total = --numero1; //decrementa 1, obs: o valor atribuído em numero1 também será alterado
+total = numero1 % numero2; //resto da divisão inteira
+total = numero1 ** numero2; //potenciação(numero1 elevando ao numero2)
+
+/*
+ordem de precedência(que vai ser executado primeiro)
+    ()
+    **
+    * / % (da esquerda para direita)
+    + - (da esquerda para direita)
+*/
 
 //Operadores de atribuição
 total = numero1 + numero2; //o sinal de = é o valor de atribuição
