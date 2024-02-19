@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <container>
+        <display>
+            <p id="appTitle">Calculadora do Chapado</p>
+            <p id="displayHistoric">0</p>
+            <p id="displayResult">0</p>
+        </display>
+
+        <numberButtons>
+            <input type="button" value="1" onclick="setNumbers(value)">
+            <input type="button" value="2" onclick="setNumbers(value)">
+            <input type="button" value="3" onclick="setNumbers(value)">
+            <input type="button" value="4" onclick="setNumbers(value)">
+            <input type="button" value="5" onclick="setNumbers(value)">
+            <input type="button" value="6" onclick="setNumbers(value)">
+            <input type="button" value="7" onclick="setNumbers(value)">
+            <input type="button" value="8" onclick="setNumbers(value)">
+            <input type="button" value="9" onclick="setNumbers(value)">
+            <input type="button" value="." onclick="setNumbers(value)">
+            <input type="button" value="0" onclick="setNumbers(value)">
+            <input type="button" value="=" onclick="calculate()">
+        </numberButtons>
+
+        <operationButtons>
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="*" onclick="setOperation(value)">
+            <input type="button" value="/" onclick="setOperation(value)">
+            <input type="button" value="-" onclick="setOperation(value)">
+            <input type="button" value="+" onclick="setOperation(value)">
+        </operationButtons>
+    </container>
+    <script src="js/script.js"></script>
+</body>
+</html>
